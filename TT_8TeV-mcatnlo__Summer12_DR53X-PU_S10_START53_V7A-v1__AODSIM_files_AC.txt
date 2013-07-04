@@ -1,0 +1,11 @@
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/0879F8F2-F117-E211-B851-0018F3D09670.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/86EA8CD3-3119-E211-979B-002618943925.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/F2061D6C-8B18-E211-A37C-003048FF9AC6.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/F0F4E959-7118-E211-8546-00248C0BE014.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/ECEAE5FE-8318-E211-A3A1-0026189438F8.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/A6D3DBBA-6118-E211-91DE-0026189438B3.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/6E450247-9318-E211-88F9-0026189438FD.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/5654BC3B-C018-E211-9547-002618943899.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/3A0A3D35-C518-E211-88F7-003048FFD71A.root
+/store/user/fhohle/OfficialSamples/TT_8TeV-mcatnlo__Summer12_DR53X-PU_S10_START53_V7A-v1__AODSIM/70083ACD-9718-E211-BA71-003048678B94.root
+
