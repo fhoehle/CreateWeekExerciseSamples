@@ -48,7 +48,7 @@ process.TFileService=cms.Service("TFileService",fileName=cms.string('test_SemiMu
 process.generation_step = cms.Path(process.myTTbarGenEvent10Parts*process.SemiMuMcFilter )#* process.genHists)# * process.printList)
 
 process.output = cms.OutputModule("PoolOutputModule",
-                                  fileName = cms.untracked.string('semiMuTTbar.root'),
+                                  fileName = cms.untracked.string('ttbarEvents_semiMutagged_5_3_11.root'),
                                   SelectEvents = cms.untracked.PSet(
 		SelectEvents = cms.vstring()
 	),
