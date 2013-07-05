@@ -19,11 +19,20 @@ eval `scramv1 runtime -sh` # this is cmsenv
 cd src
 ##
 git clone git@github.com:fhoehle/CMSSW_MyDataFormats.git
+cd CMSSW_MyDataFormats
 git checkout V00-01
+cd $CMSSW_BASE/src
+
 git clone git@github.com:fhoehle/CMSSW_MyFilters.git
+cd CMSSW_MyFilters
 git checkout V00-01
+cd $CMSSW_BASE/src
+
 git clone git@github.com:fhoehle/CMSSW_MyProducers.git
+cd CMSSW_MyProducers
 git checkout V00-01
+cd $CMSSW_BASE/src
+
 scram b -j 4
 cd $CMSSW_BASE/CreateWeekExerciseSamples
  
