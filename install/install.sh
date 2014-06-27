@@ -14,6 +14,9 @@ if [ -z "$CMSSW_BASE" ]; then
  fi
 else
   cd $CMSSW_BASE
+  if [ ! -d "CreateWeekExerciseSamples" ]; then
+    git clone git@github.com:fhoehle/CreateWeekExerciseSamples.git
+  fi
 fi
 eval `scramv1 runtime -sh` # this is cmsenv
 cd src
