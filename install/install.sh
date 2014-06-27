@@ -6,6 +6,7 @@ echo "Installing ... "
 #export SCRAM_ARCH=slc5_amd64_gcc462
 if [ -z "$CMSSW_BASE" ]; then
   echo "CMSSW_BASE missing: $CMSSW_BASE"
+  return 1
 #  if [[ "$PWD" =~ "$cmsswVer" ]]; then
 #   echo "you forgot cmsenv"
 #  else
