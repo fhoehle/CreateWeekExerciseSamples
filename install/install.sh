@@ -5,20 +5,25 @@ echo "Installing ... "
 #
 #export SCRAM_ARCH=slc5_amd64_gcc462
 if [ -z "$CMSSW_BASE" ]; then
-  if [[ "$PWD" =~ "$cmsswVer" ]]; then
-   echo "you forgot cmsenv"
-  else
-   echo "creating "$cmsswVer
-   scramv1 project CMSSW $cmsswVer # this is cmsrel
-   cd $cmsswVer
- fi
-else
-  cd $CMSSW_BASE
-  if [ ! -d "CreateWeekExerciseSamples" ]; then
-    git clone git@github.com:fhoehle/CreateWeekExerciseSamples.git
-  fi
+  echo "CMSSW_BASE missing: $CMSSW_BASE"
+#  if [[ "$PWD" =~ "$cmsswVer" ]]; then
+#   echo "you forgot cmsenv"
+#  else
+#   echo "creating "$cmsswVer
+#   scramv1 project CMSSW $cmsswVer # this is cmsrel
+#   cd $cmsswVer
+#   eval `scramv1 runtime -sh`
+#   git cms-init -y
+#   git clone git@github.com:fhoehle/CreateWeekExerciseSamples.git
+# fi
 fi
+cd $CMSSW_BASE
+  #if [ ! -d "$CMSSW_BASE/CreateWeekExerciseSamples" ]; then
+  #  git clone git@github.com:fhoehle/CreateWeekExerciseSamples.git
+  #fi
+#fi
 eval `scramv1 runtime -sh` # this is cmsenv
+git cms-init -y
 cd src
 ##
 git clone git@github.com:fhoehle/CMSSW_MyDataFormats.git
@@ -37,5 +42,5 @@ cd CMSSW_MyProducers
 cd $CMSSW_BASE/src
 
 scram b -j 4
-cd $CMSSW_BASE/CreateWeekExerciseSamples
+#cd $CMSSW_BASE/CreateWeekExerciseSamples
  
