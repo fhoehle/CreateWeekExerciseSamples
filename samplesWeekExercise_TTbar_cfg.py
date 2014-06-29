@@ -18,7 +18,7 @@ if options.maxEvents != '':
  process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(options.maxEvents))
 print "process maxEvents ",process.maxEvents
 process.source = cms.Source("PoolSource",
-        fileNames = cms.untracked.vstring()
+        fileNames = cms.untracked.vstring('/store/relval/CMSSW_7_1_0/RelValProdTTbar_13/AODSIM/POSTLS171_V15-v1/00000/96855E2B-8DFB-E311-9EEB-0025905A60CA.root')
 )
 if options.inputFiles != cms.untracked.vstring():
  process.source.fileNames=cms.untracked.vstring(options.inputFiles)
