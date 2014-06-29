@@ -41,7 +41,7 @@ git clone git@github.com:fhoehle/CMSSW_MyProducers.git
 cd CMSSW_MyProducers
 #git checkout V00-01
 cd $CMSSW_BASE/src
-
+git cms-merge-topic -u CMS-PAT-Tutorial:CMSSW_7_1_0_patTutorial
 scram b -j 4
 #cd $CMSSW_BASE/CreateWeekExerciseSamples
  
