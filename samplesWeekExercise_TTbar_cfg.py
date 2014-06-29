@@ -7,6 +7,11 @@ options.register ('selectSemiMu',
                    VarParsing.multiplicity.singleton,
                    VarParsing.varType.bool,
                    "select semi muonic events (gen Lvl)")
+options.register ('printGenParts',
+                   False,
+                   VarParsing.multiplicity.singleton,
+                   VarParsing.varType.bool,
+                   "print genParticles")
 ##################################
 options.parseArguments()
 ################################
@@ -50,7 +55,7 @@ process.genHists = cms.EDAnalyzer(
 
 process.genMuons  = cms.EDFilter("CandViewSelector",
     src = cms.InputTag("genParticles"),
-    cut = cms.string(' abs(pdgId) == 13 && abs(status) == 23'),
+    cut = cms.string(' abs(pdgId) == 13 && abs(status) == 3'),
     #filter = cms.bool(True) 
 )
 
@@ -60,7 +65,9 @@ process.genMuonsFilter = cms.EDFilter("CandViewCountFilter",
    maxNumber = cms.uint32(1)
 )
  
-process.selectSemiMu = cms.Path(process.genMuons) #process.printList * process.genMuons)
+process.selectSemiMu = cms.Path(process.genMuons) 
+if options.printGenParts:
+  process.selectSemiMu.insert(0,process.printList)
 if options.selectSemiMu:
   process.selectSemiMu += process.genMuonsFilter 
 else:
