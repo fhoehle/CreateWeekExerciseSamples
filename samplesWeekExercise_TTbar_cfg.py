@@ -24,6 +24,7 @@ if options.inputFiles != cms.untracked.vstring():
  process.source.fileNames=cms.untracked.vstring(options.inputFiles)
 process.load('Configuration.StandardSequences.Services_cff')
 process.load("FWCore.MessageService.MessageLogger_cfi")
+process.MessageLogger.cerr.FwkReport.reportEvery = 100
 
 process.printList = cms.EDAnalyzer("ParticleListDrawer",
         src = cms.InputTag("genParticles"),
